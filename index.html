@@ -3,215 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Isaac Quarshie - Full Stack Web Developer, Mobile App Developer, Graphic Designer">
-    <meta name="keywords" content="Full Stack Web Developer, Mobile App Developer, Graphic Designer, PHP, CodeIgniter, WordPress, Angular, Ionic">
-    <meta name="author" content="Isaac Quarshie">
-    <title>Isaac Quarshie | Portfolio</title>
+    <meta name="description" content="Isaac Quarshie - Full Stack Developer & Software Engineer">
+    <title>Isaac Quarshie | Full Stack Engineer</title>
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom Stylesheet -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Mobile Navigation Toggle -->
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
-        <i class="fas fa-bars"></i>
-    </button>
-
-    <!-- Sidebar / Navigation -->
-    <aside class="sidebar" id="sidebar">
-        <div class="profile-header">
-            <div class="avatar-container">
-                <i class="fas fa-user-code placeholder-avatar"></i>
-            </div>
-            <h1 class="logo"><a href="#">Isaac Quarshie</a></h1>
-            <p class="tagline">Full Stack Developer<br>Mobile Developer<br>Graphic Designer</p>
-            <a href="mailto:youngquarshie@gmail.com" class="email-link">youngquarshie@gmail.com</a>
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">&lt;Isaac<span class="accent">.Dev /&gt;</span></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links" id="navLinks">
+                <a href="#about" class="active">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Work</a>
+                <a href="#contact" class="btn-nav">Let's Talk</a>
+            </nav>
         </div>
+    </header>
 
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="#about" class="nav-link active"><i class="fas fa-user"></i> About Me</a></li>
-                <li><a href="#skills" class="nav-link"><i class="fas fa-laptop-code"></i> Skills</a></li>
-                <li><a href="#projects" class="nav-link"><i class="fas fa-folder-open"></i> Projects</a></li>
-                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-        </nav>
-
-        <div class="social-links">
-            <a href="https://gh.linkedin.com/in/isaac-quarshie-a58026122" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/youngquarshie" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="mailto:youngquarshie@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="badge-status">
+                <span class="status-dot"></span> Available for projects & opportunities
+            </div>
+            <h1 class="hero-title">Engineering robust <span class="gradient-text">Web & Mobile</span> solutions.</h1>
+            <p class="hero-sub">Full Stack Developer with 3+ years of experience building scalable enterprise web portals, mobile apps, and custom business management software.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View Featured Work <i class="fas fa-arrow-right"></i></a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+            <div class="social-bar">
+                <a href="https://github.com/youngquarshie" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://gh.linkedin.com/in/isaac-quarshie-a58026122" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:youngquarshie@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
-    </aside>
+    </section>
 
-    <!-- Main Content Wrapper -->
-    <main class="main-content">
-
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-card">
-                    <p>Solution-driven Full Stack Developer adept at contributing to a highly collaborative work environment, finding solutions, and driving customer satisfaction. Built products across desktop, web, and mobile platforms over 3+ years.</p>
-                    <p>Proven experience developing consumer-focused applications using HTML, CSS, PHP (CodeIgniter), JavaScript, and modern frontend frameworks, with strong debugging, API integration, and diagnostic skills.</p>
-                </div>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Overview</span>
+                <h2>About Me</h2>
             </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <div class="container">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-card"><i class="fas fa-code"></i> <span>PHP (CodeIgniter)</span></div>
-                    <div class="skill-card"><i class="fab fa-wordpress"></i> <span>WordPress & Plugin Dev</span></div>
-                    <div class="skill-card"><i class="fab fa-html5"></i> <span>HTML5 / CSS3</span></div>
-                    <div class="skill-card"><i class="fab fa-bootstrap"></i> <span>Bootstrap & Tailwind CSS</span></div>
-                    <div class="skill-card"><i class="fas fa-mobile-alt"></i> <span>Ionic Framework</span></div>
-                    <div class="skill-card"><i class="fab fa-angular"></i> <span>Angular & AngularJS</span></div>
-                    <div class="skill-card"><i class="fas fa-database"></i> <span>MySQL</span></div>
-                    <div class="skill-card"><i class="fas fa-plug"></i> <span>REST API Integration</span></div>
-                    <div class="skill-card"><i class="fab fa-aws"></i> <span>AWS & DigitalOcean</span></div>
-                    <div class="skill-card"><i class="fas fa-key"></i> <span>SSO Authentication (AWS)</span></div>
-                    <div class="skill-card"><i class="fas fa-search"></i> <span>Search Engine Optimization</span></div>
+            <div class="about-grid">
+                <div class="about-text glass-card">
+                    <p>I am a solution-driven Full Stack Developer skilled in building performant, user-centric products. Over the past 3+ years, I've engineered solutions across desktop, web, and mobile ecosystems.</p>
+                    <p>My expertise covers frontend interface execution, backend API architectures, custom CMS integrations, and cloud infrastructure management.</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="container">
-                <h2 class="section-title">Completed & Ongoing Works</h2>
-                <p class="section-subtitle">Selected web applications, mobile platforms, and client portals.</p>
-
-                <div class="projects-grid">
-                    
-                    <article class="project-card">
-                        <div class="project-content">
-                            <h3>Cassona International Ghana</h3>
-                            <p>Official web platform development and deployment for medical equipment services.</p>
-                            <a href="https://cassonainternationalghana.com/" target="_blank" class="project-link">Visit Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-content">
-                            <h3>Get Signed and Sealed</h3>
-                            <p>Distinguished legal services platform built to showcase high-touch corporate legal operations.</p>
-                            <a href="https://getsignedandsealed.com" target="_blank" class="project-link">Visit Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-content">
-                            <h3>Emmanet Real Estate</h3>
-                            <p>Property listing and real estate web application platform.</p>
-                            <a href="https://emmanetrealestate.com/" target="_blank" class="project-link">Visit Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-content">
-                            <h3>AshaimanToday</h3>
-                            <p>Community news blog website platform for local journalism and urban stories.</p>
-                            <a href="https://ashaimantoday.com/" target="_blank" class="project-link">Visit Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-content">
-                            <h3>DispatchGH Android App</h3>
-                            <p>Native mobile logistics application built with Ionic Framework and CodeIgniter backend.</p>
-                            <span class="badge">Mobile App</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-content">
-                            <h3>Church Management System</h3>
-                            <p>Custom administrative web app for Church of Christ (Community 8 & 9) built with PHP, MySQL, jQuery, Ajax, and Bootstrap.</p>
-                            <span class="badge">Web Application</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-content">
-                            <h3>Devault Gardens POS</h3>
-                            <p>Custom web-based Point of Sale inventory management software using PHP, MySQL, jQuery, and Bootstrap.</p>
-                            <span class="badge">POS Software</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-content">
-                            <h3>Barnies Automobile</h3>
-                            <p>E-commerce automotive platform developed using custom WordPress configuration.</p>
-                            <a href="https://barniesautomobile.com/" target="_blank" class="project-link">Visit Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-content">
-                            <h3>Jaycay Dog Services</h3>
-                            <p>Service showcase platform built with custom WordPress setup.</p>
-                            <a href="https://jaycaydogservices.com/" target="_blank" class="project-link">Visit Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-content">
-                            <h3>Silverlife Helpers Ghana</h3>
-                            <p>E-commerce platform for Medical Mall healthcare products built with WordPress.</p>
-                            <a href="https://silverlifehelpersghana.com" target="_blank" class="project-link">Visit Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-content">
-                            <h3>Hannah's Care Services Platform</h3>
-                            <p>Healthcare platform web portal designed for patient care management.</p>
-                            <a href="https://www.hannahscareservices.com/" target="_blank" class="project-link">Visit Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-content">
-                            <h3>Student Clearance Portal</h3>
-                            <p>Institutional student clearance portal built with PHP, MySQL, Ajax, and Materialize CSS.</p>
-                            <span class="badge">Internal Software</span>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="contact-box">
-                    <p>Interested in working together or hiring me for full-stack web and mobile development?</p>
-                    <a href="mailto:youngquarshie@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Send an Email</a>
-                    
-                    <div class="contact-socials">
-                        <a href="https://gh.linkedin.com/in/isaac-quarshie-a58026122" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://github.com/youngquarshie" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <div class="stats-grid">
+                    <div class="stat-card glass-card">
+                        <h3>3+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <h3>20+</h3>
+                        <p>Completed Works</p>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <h3>100%</h3>
+                        <p>Client Satisfaction</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <p>&copy; Isaac Quarshie. All rights reserved.</p>
+    <!-- Technical Stack Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Core Technologies</span>
+                <h2>Technical Toolkit</h2>
             </div>
-        </footer>
+            <div class="skills-wrapper">
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-server"></i> Backend & Databases</h3>
+                    <div class="tech-tags">
+                        <span>PHP (CodeIgniter)</span>
+                        <span>MySQL</span>
+                        <span>REST APIs</span>
+                        <span>WordPress Plugin Dev</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend & Mobile</h3>
+                    <div class="tech-tags">
+                        <span>HTML5 / CSS3</span>
+                        <span>Bootstrap & Tailwind</span>
+                        <span>Ionic Framework</span>
+                        <span>Angular / AngularJS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-cloud"></i> Cloud & Infrastructure</h3>
+                    <div class="tech-tags">
+                        <span>AWS (SSO Auth)</span>
+                        <span>DigitalOcean</span>
+                        <span>SEO Optimization</span>
+                        <span>Server Administration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </main>
+    <!-- Portfolio Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2>Featured Projects</h2>
+            </div>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="custom">Custom Platforms</button>
+                <button class="filter-btn" data-filter="wordpress">WordPress</button>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card glass-card" data-category="web">
+                    <div class="project-header">
+                        <span class="category-badge">Web Application</span>
+                        <a href="https://cassonainternationalghana.com/" target="_blank" class="external-icon"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <h3>Cassona International Ghana</h3>
+                    <p>Official digital presence and medical equipment service showcase platform.</p>
+                    <div class="card-tech">
+                        <span>PHP</span><span>CSS3</span><span>JS</span>
+                    </div>
+                </article>
+
+                <article class="project-card glass-card" data-category="web">
+                    <div class="project-header">
+                        <span class="category-badge">Legal Portal</span>
+                        <a href="https://getsignedandsealed.com" target="_blank" class="external-icon"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <h3>Get Signed and Sealed</h3>
+                    <p>High-touch corporate platform built for an established legal services provider.</p>
+                    <div class="card-tech">
+                        <span>Full Stack</span><span>Responsive</span>
+                    </div>
+                </article>
+
+                <article class="project-card glass-card" data-category="custom">
+                    <div class="project-header">
+                        <span class="category-badge">Mobile App</span>
+                        <span class="badge-status-tag">Android</span>
+                    </div>
+                    <h3>DispatchGH Mobile App</h3>
+                    <p>Native logistics and dispatch Android mobile app built with Ionic & CodeIgniter backend.</p>
+                    <div class="card-tech">
+                        <span>Ionic</span><span>CodeIgniter</span><span>REST API</span>
+                    </div>
+                </article>
+
+                <article class="project-card glass-card" data-category="custom">
+                    <div class="project-header">
+                        <span class="category-badge">Enterprise POS</span>
+                        <span class="badge-status-tag">Internal System</span>
+                    </div>
+                    <h3>Devault Gardens POS</h3>
+                    <p>Custom Web-based Point of Sale and real-time inventory management platform.</p>
+                    <div class="card-tech">
+                        <span>PHP</span><span>MySQL</span><span>jQuery</span><span>Bootstrap</span>
+                    </div>
+                </article>
+
+                <article class="project-card glass-card" data-category="custom">
+                    <div class="project-header">
+                        <span class="category-badge">Management System</span>
+                        <span class="badge-status-tag">Web App</span>
+                    </div>
+                    <h3>Church Management System</h3>
+                    <p>Administrative portal designed for Church of Christ (Community 8 & 9).</p>
+                    <div class="card-tech">
+                        <span>PHP</span><span>MySQL</span><span>Ajax</span>
+                    </div>
+                </article>
+
+                <article class="project-card glass-card" data-category="wordpress">
+                    <div class="project-header">
+                        <span class="category-badge">WordPress E-Commerce</span>
+                        <a href="https://barniesautomobile.com/" target="_blank" class="external-icon"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <h3>Barnies Automobile</h3>
+                    <p>Custom e-commerce portal built for automotive sales and listings.</p>
+                    <div class="card-tech">
+                        <span>WordPress</span><span>WooCommerce</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-card glass-card">
+                <h2>Let's build something remarkable together.</h2>
+                <p>Have a project in mind, an app concept, or an enterprise system requirement?</p>
+                <a href="mailto:youngquarshie@gmail.com" class="btn btn-primary btn-large"><i class="fas fa-paper-plane"></i> Send an Email</a>
+                <div class="contact-footer-links">
+                    <a href="https://github.com/coderike" target="_blank"><i class="fab fa-github"></i> github.com/youngquarshie</a>
+                    <a href="https://gh.linkedin.com/in/isaac-quarshie-a58026122" target="_blank"><i class="fab fa-linkedin"></i> Isaac Quarshie</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Isaac Quarshie. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

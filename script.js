@@ -1,34 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Mobile navigation menu toggle
     const menuToggle = document.getElementById('menuToggle');
-    const sidebar = document.getElementById('sidebar');
+    const navLinks = document.getElementById('navLinks');
 
-    if (menuToggle && sidebar) {
+    if (menuToggle && navLinks) {
         menuToggle.addEventListener('click', () => {
-            sidebar.classList.toggle('open');
+            navLinks.classList.toggle('open');
         });
     }
 
-    // Highlight active nav link on scroll
-    const sections = document.querySelectorAll('.section');
-    const navLinks = document.querySelectorAll('.nav-link');
+    // Portfolio Category Filter
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
 
-    window.addEventListener('scroll', () => {
-        let current = '';
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
 
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
-                current = section.getAttribute('id');
-            }
-        });
+            const filterValue = btn.getAttribute('data-filter');
 
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
-            }
+            projectCards.forEach(card => {
+                if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
         });
     });
 });
